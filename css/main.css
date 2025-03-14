@@ -43,9 +43,27 @@ body {
 }
 .container .introduction .typograph-container .greetings {
   font-size: 6rem;
+  margin: 0 0 20px 0;
 }
 .container .introduction .typograph-container .description {
   width: 40%;
+  margin: 0 0 40px 0;
+}
+.container .introduction .typograph-container .btn-contact-container {
+  border-bottom: 1px solid #fff;
+  padding: 5px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.container .introduction .typograph-container .btn-contact-container .btn-link {
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.container .introduction .typograph-container .btn-contact-container:hover {
+  background: #ffffff;
+}
+.container .introduction .typograph-container .btn-contact-container:hover .btn-link {
+  color: #000000;
 }
 .container .image-container {
   position: absolute;
@@ -63,4 +81,17 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   filter: grayscale(100%);
+}
+.container .skills {
+  width: 100%;
+}
+.container .skills .items {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 80px 0;
+}
+.container .skills .items .item {
+  width: 29%;
 }/*# sourceMappingURL=main.css.map */
