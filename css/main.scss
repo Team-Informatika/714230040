@@ -1,18 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0; padding: 0;
     box-sizing: border-box;
+    color: #fff;
+    font-family: 'Work Sans', sans-serif;
+}
+
+body {
+    background: #000000;
 }
 
 .navigation {
     position: fixed;
     width: 100%;
-    padding: 20px 80px;
+    padding: 20px 120px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 20;
 
     .brand-name {
-
+        font-weight: 600;
     }
 
     .socials {
@@ -24,22 +33,25 @@
 }
 
 .container {
-    padding: 40px 80px;
+    width: 100%;
+    padding: 0 120px;
 
     .introduction {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        width: 100%;
+        height: 100vh;
+        position: relative;
 
         .typograph-container {
-            width: 100%;
+            position: absolute;
+            z-index: 10;
+            top: 20%;
 
             .greetings {
-                
+                font-size: 6rem;
             }
 
             .description {
-
+                width: 40%;
             }
 
             .btn-contact-container {
@@ -52,19 +64,20 @@
     }
 
     .image-container {
-        width: 100%;
-        display: flex;
-        justify-content: end;
-        align-items: center;
+        position: absolute;
+        top: 0;
+        right: 0;
 
         .image-frame {
-            width: 300px;
-            height: 500px;
+            width: 320px;
+            height: 550px;
+            background: #0a0a0a;
 
             .image {
                width: 100%;
                height: 100%;
                object-fit: cover; 
+               filter: grayscale(100%);
             }
         }
     }
