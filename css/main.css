@@ -82,6 +82,20 @@ body {
      object-fit: cover;
   filter: grayscale(100%);
 }
+.container .technical-container {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+.container .technical-container .technical {
+  width: 320px;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.container .technical-container .technical .fa-brands {
+  font-size: 1.8rem;
+}
 .container .skills {
   width: 100%;
 }

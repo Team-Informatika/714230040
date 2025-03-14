@@ -96,6 +96,23 @@ body {
         }
     }
 
+    .technical-container {
+        width: 100%;
+        display: flex;
+        justify-content: end;
+
+        .technical {
+            width: 320px;
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+    
+            .fa-brands {
+                font-size: 1.8rem;
+            }
+        }
+    }
+
     .skills {
         width: 100%;
 
