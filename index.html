@@ -5,6 +5,9 @@
     <title>Portfolio - Hadzik Mochamad Sofyan</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+    <script>pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.worker.min.js';</script>
+
 </head>
 <body>
     <nav class="navigation">
@@ -12,8 +15,8 @@
 
         <ul class="socials">
             <li class="social-list"><a title="LinkedIn" class="social-link" href=""><i class="fa-brands fa-linkedin"></i></a></li>
-            <li class="social-list"><a title="Instagram" class="social-link" href=""><i class="fa-brands fa-instagram"></i></a></li>
-            <li class="social-list"><a title="GitHub" class="social-link" href=""><i class="fa-brands fa-github"></i></a></li>
+            <li class="social-list"><a title="Instagram" class="social-link" href="https://www.instagram.com/hadzik.developer/"><i class="fa-brands fa-instagram"></i></a></li>
+            <li class="social-list"><a title="GitHub" class="social-link" href="https://www.github.com/hadzikk"><i class="fa-brands fa-github"></i></a></li>
             <li class="social-list"><a title="Upwork" class="social-link" href=""><i class="fa-brands fa-square-upwork"></i></a></li>
             <li class="social-list"><a title="X" class="social-link" href=""><i class="fa-brands fa-x-twitter"></i></a></li>
         </ul>
@@ -25,7 +28,7 @@
                 <h1 class="greetings">Hi, I'm Hadzik Mochamad Sofyan</h1>
                 <p class="description">A Front-End Developer experienced in JavaScript, Tailwind CSS, and Laravel. Active as a freelancer, skilled in UI/UX Design, and developing e-learning platforms and professional-quality landing pages.</p>
                 <div class="btn-contact-container">
-                    <a class="btn-link" href="">contact me</a>
+                    <a class="btn-link" href="mailto:hadzikmochammad@gmail.com">contact me</a>
                 </div>
             </div>
 
@@ -77,15 +80,40 @@
 
             <div class="items">
                 <div class="item">
-                    <h2 class="skill">Version Control Systems</h2>
+                    <h2 class="skill">GIT Version Control Systems</h2>
                     <p class="experience">a years experience</p>
                 </div>
             </div>
         </div>
 
         <div class="projects">
+            <h1>Projects</h1>
 
+            <div class="cards">
+                <div class="card">
+                    <div class="card-thumbnail">
+                        <video class="thumbnail-video" src="videos/4569076-hd_1920_1080_30fps.mp4" muted loop></video>
+                    </div>
+                    <p class="card-title">Sports Cars - Landing Page</p>
+                    <p class="card-category">Landing Pages</p>
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="card">
+                    <div class="card-thumbnail" data-pdf="./documents/b8vsdxc4gerxopjgcmws.pdf"></div>
+                    <p class="card-title">Luxurious Ramen Restaurant - Landing Page Design</p>
+                    <p class="card-category">UI Figma</p>
+                </div>
+                <div class="card">
+                    <div class="card-thumbnail" data-pdf="./documents/pnic5ruqpdmkbcmicdqm.pdf"></div>
+                    <p class="card-title">Car Selling - Landing Page Design</p>
+                    <p class="card-category">UI Figma</p>
+                </div>
+            </div>
         </div>
     </div>
+
+    <script src="js/script.js" defer></script>
 </body>
 </html>
